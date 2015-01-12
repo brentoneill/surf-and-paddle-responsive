@@ -1,0 +1,258 @@
+.visible-s{
+  display:none;
+}
+
+
+/*Large*/
+@media screen and (max-width:1300px) {
+  body {
+    overflow-x:hidden;
+  }
+  .container {
+    width:1000px;
+  }
+  header nav {
+    width:900px;
+  }
+  .caption h1 {
+    font-size:72px;
+  }
+  .footer-wrapper {
+    padding:40px;
+  }
+  .posts-wrapper {
+    padding-left:80px;
+  }
+  .sidebar-wrapper {
+    padding-right:80px;
+  }
+  .sidebar-ad-wrapper {
+    width:250px;
+    height:250px;
+  }
+  .sidebar-text p {
+    font-size:14px;
+  }
+  .posts-wrapper h2 {
+    font-size:44px;
+  }
+  .image-link {
+    height:250px;
+  }
+}
+
+/*Medium*/
+@media screen and (max-width:992px) {
+  body {
+    overflow-x:hidden;
+  }
+  .container {
+    width:768px;
+  }
+
+  header {
+    height:400px;
+  }
+
+  header nav {
+    width:700px;
+  }
+  .caption {
+    margin: 0 auto;
+    margin-top:80px;
+  }
+
+  .caption h1 {
+    font-size:72px;
+  }
+  .footer-wrapper {
+    padding:40px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .posts-wrapper {
+    padding-left:60px;
+  }
+  .sidebar-wrapper {
+    padding-right:60px;
+  }
+  .sidebar-ad-wrapper {
+    width:189px;
+    height:189px;
+    background-position:center;
+  }
+  .sidebar-text p {
+    font-size:14px;
+  }
+  .posts-wrapper h2 {
+    font-size:36px;
+  }
+  .post-buttons a {
+    display:block;
+  }
+
+  .image-link {
+    height:200px;
+    background-position:center;
+  }
+  .image-link:hover {
+    background-position:center;
+  }
+  .image-link h3 {
+    font-size:20px;
+  }
+}
+
+/*Small*/
+@media screen and (max-width:768px) {
+  body {
+    overflow-x:hidden;
+  }
+  div.main-content-container {
+    padding-bottom:0;
+  }
+  /*clear floats*/
+  header nav ul,
+  section.main,
+  aside,
+  footer p,
+  footer nav {
+    float:none;
+  }
+  /*turn inline to block elements*/
+  header nav a,
+  header nav ul,
+  section.main,
+  aside,
+  footer p, {
+    display:block;
+  }
+  /*hide certain elements*/
+  .post-info a.profile-pic-link,
+  .post-info a.user-name,
+  .sidebar-text,
+  .brand-title,
+  .post-buttons a span {
+    display:none;
+  }
+  .container {
+    width:460px;
+  }
+  header {
+    height:220px;
+  }
+
+  header nav {
+    width:400px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  header nav ul {
+    margin-bottom:20px;
+  }
+
+  header nav a, {
+    margin-bottom:10px;
+  }
+
+  .caption {
+    margin-top:0px;
+  }
+
+  .caption h1 {
+    font-size:44px;
+    line-height:20px;
+  }
+  .footer-wrapper {
+    padding:30px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  section.main, aside {
+    width:100%;
+  }
+  .sidebar-wrapper, .posts-wrapper {
+    padding:40px;
+  }
+  .sidebar-wrapper {
+    padding-top:0;
+  }
+  .sidebar-ad-wrapper {
+    width:100%;
+    height:240px;
+  }
+  .sidebar-text p {
+    font-size:14px;
+  }
+  .posts-wrapper h2 {
+    font-size:64px;
+  }
+  .post-buttons a {
+    display:inline;
+  }
+  .popular-posts h2 {
+    font-size:36px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .image-link {
+    height:240px;
+    background-position:center;
+    width:100%;
+    margin-bottom:20px;
+  }
+  .image-link li {
+    float:none;
+  }
+  .popular-posts-wrapper > a {
+    display:block;
+  }
+  .popular-posts-wrapper {
+    padding-left:40px;
+    padding-right:40px;
+    background-color:white;
+    overflow:auto;
+  }
+  .image-link:hover {
+    background-position:center;
+  }
+  .image-link h3 {
+    font-size:30px;
+    padding-right:80px;
+  }
+  footer,
+  footer nav {
+    text-align:center;
+  }
+  footer nav {
+    padding:0;
+  }
+  footer nav ul {
+    padding-left:0px;
+  }
+  div.footer-wrapper p {
+    margin-bottom:40px;
+  }
+  .post-buttons {
+    display:inline;
+  }
+  blockquote {
+    margin-right:0;
+  }
+
+  .visible-s {
+    display:block;
+  }
+  .hidden-s {
+    display:none;
+  }
+  .logo-wrapper {
+    margin-top:20px;
+    margin-bottom:20px;
+    display:block;
+  }
+  footer {
+    height:auto;
+  }
+}
