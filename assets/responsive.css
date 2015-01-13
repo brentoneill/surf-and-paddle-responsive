@@ -259,6 +259,9 @@
   footer {
     height:auto;
   }
+  .footer-link-four {
+    display:none;
+  }
 }
 
 @media screen and (max-width:320px) {
