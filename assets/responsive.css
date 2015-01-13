@@ -3,6 +3,10 @@
 }
 
 
+.aside {
+  transition:1s;
+}
+
 /*Large*/
 @media screen and (max-width:1300px) {
   body {
@@ -62,11 +66,7 @@
     margin-top:80px;
   }
 
-  .caption h1 {
-    font-size:72px;
-  }
   .footer-wrapper {
-    padding:40px;
     padding-left:20px;
     padding-right:20px;
   }
@@ -254,5 +254,39 @@
   }
   footer {
     height:auto;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .container {
+    width:300px;
+  }
+  header nav {
+    width:280px;
+  }
+  header nav ul {
+    margin-bottom:10px;
+  }
+  .caption h1 {
+    font-size:28px;
+  }
+  .caption p {
+    font-size:12px;
+  }
+  .posts-wrapper h2 {
+    font-size:40px;
+  }
+  .popular-posts h2 {
+    font-size:24px;
+  }
+  .image-link h3 {
+    font-size:20px;
+    padding-right:60px;
+  }
+  blockquote {
+    font-size:16px;
+  }
+  .post-content p {
+    font-size:12px;
   }
 }
