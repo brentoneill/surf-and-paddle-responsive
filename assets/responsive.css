@@ -261,20 +261,29 @@
   .container {
     width:300px;
   }
+  header {
+    height:180px;
+  }
   header nav {
     width:280px;
+    padding-top:16px;
   }
   header nav ul {
     margin-bottom:10px;
   }
+  h5 {
+    font-size:14px;
+  }
   .caption h1 {
     font-size:28px;
+    line-height:6px;
   }
   .caption p {
     font-size:12px;
+    font-weight:bold;
   }
   .posts-wrapper h2 {
-    font-size:40px;
+    font-size:44px;
   }
   .popular-posts h2 {
     font-size:24px;
@@ -289,4 +298,17 @@
   .post-content p {
     font-size:12px;
   }
+  .sidebar-ad a {
+    font-size:12px;
+  }
+  .sidebar-wrapper, .posts-wrapper, .popular-posts-wrapper {
+    padding:20px;
+  }
+  .posts-wrapper {
+    padding-top:40px;
+  }
+  .image-link {
+    height:240px;
+  }
+
 }
