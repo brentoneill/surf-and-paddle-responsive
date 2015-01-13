@@ -87,8 +87,12 @@
   .posts-wrapper h2 {
     font-size:36px;
   }
+  .post-buttons {
+    text-align:center;
+  }
   .post-buttons a {
-    display:block;
+    display:inline-block;
+    margin-bottom:10px;
   }
 
   .image-link {

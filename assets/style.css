@@ -271,6 +271,10 @@ a.user-name {
   width:315px;
 }
 
+.sidebar-ad-wrapper:hover {
+  background: url('images/sharma-climber.jpg');
+}
+
 .sidebar-ad p{
   text-align:right;
   margin:0;
