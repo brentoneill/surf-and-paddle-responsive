@@ -98,7 +98,7 @@ header {
   height:523px;
   text-align:center;
   background: linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6)),
-  url('images/rocks.jpeg');
+  url('../images/rocks.jpeg');
   background-size:cover;
   vertical-align:middle;
 
@@ -295,11 +295,11 @@ a.user-name {
 }
 
 .sidebar-ad-wrapper {
-  background: $gradient, url('images/sharma-climber.jpg');
+  background: $gradient, url('../images/sharma-climber.jpg');
   height:315px;
   width:315px;
   &:hover {
-    background: url('images/sharma-climber.jpg');
+    background: url('../images/sharma-climber.jpg');
   }
 }
 
@@ -361,27 +361,27 @@ section.popular-posts {
 }
 
 .honnold {
-  background: $gradient, url('images/honnold.jpg');
+  background: $gradient, url('../images/honnold.jpg');
   &:hover {
     background:none;
-    background-image:url('images/honnold.jpg');
+    background-image:url('../images/honnold.jpg');
   }
 }
 
 .rope {
-  background: $gradient, url('images/rope.jpg');
+  background: $gradient, url('../images/rope.jpg');
   background-size:cover;
   background-position:center;
   &:hover {
     background:none;
-    background-image:url('images/rope.jpg');
+    background-image:url('../images/rope.jpg');
     background-size:cover;
     background-position:center;
   }
 }
 
 .ravelle {
-  background:$gradient, url('images/ravelle.jpg');
+  background:$gradient, url('../images/ravelle.jpg');
   background-size:cover;
   background-position:center;
   &:hover {
@@ -394,10 +394,10 @@ section.popular-posts {
 
 .beeners {
   background: linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6)),
-  url('images/beeners.jpg');
+  url('../images/beeners.jpg');
   &:hover {
     background:none;
-    background-image:url('images/beeners.jpg');
+    background-image:url('../images/beeners.jpg');
   }
 }
 
