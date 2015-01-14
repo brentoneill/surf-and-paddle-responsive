@@ -1,0 +1,55 @@
+/***** HEADER *****/
+header {
+  height:523px;
+  text-align:center;
+  @include gradient-bg ($blue-tint, $blue-tint, $header-image);
+  background-size:cover;
+  vertical-align:middle;
+
+  nav {
+    margin:0 auto;
+    vertical-align:middle;
+    width:1004px;
+    text-align:left;
+    padding:20px;
+    p {
+      display:inline;
+    }
+    a {
+      display:inline;
+      color:black;
+      &:hover {
+        color:white;
+      }
+    }
+    ul {
+      float:right;
+      margin:0;
+      padding:0;
+      li {
+        display:inline-block;
+        list-style-type:none;
+        margin-right:10px;
+      }
+    }
+  }
+}
+
+.caption {
+  margin-top:136px;
+  margin-left:128px;
+  margin-right:128px;
+  height:120px;
+
+  h1 {
+    font-family:$body-font;
+    font-size:90px;
+    color:white;
+    line-height:50px;
+  }
+  p {
+    color:black;
+    font-size:14px;
+  }
+}
+/***** END HEADER *****/

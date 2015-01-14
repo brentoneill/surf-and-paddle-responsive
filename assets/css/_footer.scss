@@ -1,0 +1,43 @@
+/***** FOOTER *****/
+.footer-wrapper {
+  padding-top:44px;
+  padding-right:155px;
+  padding-left:155px;
+}
+
+.logo-wrapper {
+  display:inline;
+}
+
+footer {
+  width:100%;
+  background-color:$dark-blue;
+  height:96px;
+  color:$light-grey;
+  display:inline-block;
+  font-size:13px;
+
+  p {
+    margin:0px;
+    display:inline;
+    color:$light-grey;
+  }
+
+  nav {
+    float:right;
+    display:inline;
+    ul {
+      margin:0px;
+      li {
+        display:inline;
+        a {
+          color:$light-grey;
+          margin-right:6px;
+          &:hover {
+            color:$white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,229 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-/***** Google Font imports *****/
-/*Animated Media Queries*/
-header, .posts-wrapper, .sidebar-wrapper, .popular-posts-wrapper {
-  transition: all .7s ease-in-out; }
-
-.caption h1, .posts-wrapper h2, .popular-posts h2 {
-  transition: font-size .5s ease-in-out; }
-
-/*End Animated Media Queries*/
-.visible-s {
-  display: none; }
-
-.aside {
-  transition: 1s; }
-
-/*Large*/
-@media screen and (max-width: 1300px) {
-  body {
-    overflow-x: hidden; }
-  .container {
-    width: 1000px; }
-  header nav {
-    width: 900px; }
-  .caption h1 {
-    font-size: 72px; }
-  .footer-wrapper {
-    padding: 40px; }
-  .posts-wrapper {
-    padding-left: 80px; }
-  .sidebar-wrapper {
-    padding-right: 80px; }
-  .sidebar-ad-wrapper {
-    width: 250px;
-    height: 250px; }
-  .sidebar-text p {
-    font-size: 14px; }
-  .posts-wrapper h2 {
-    font-size: 44px; }
-  .image-link {
-    height: 250px; } }
-
-/*Medium*/
-@media screen and (max-width: 992px) {
-  body {
-    overflow-x: hidden; }
-  .container {
-    width: 768px; }
-  header {
-    height: 400px; }
-  header nav {
-    width: 700px; }
-  .caption {
-    margin: 0 auto;
-    margin-top: 80px; }
-  .footer-wrapper {
-    padding-left: 20px;
-    padding-right: 20px; }
-  .posts-wrapper {
-    padding-left: 60px; }
-  .sidebar-wrapper {
-    padding-right: 60px; }
-  .sidebar-ad-wrapper {
-    width: 189px;
-    height: 189px;
-    background-position: center; }
-  .sidebar-ad-wrapper:hover {
-    background-position: center; }
-  .sidebar-text p {
-    font-size: 14px; }
-  .posts-wrapper h2 {
-    font-size: 36px; }
-  .post-buttons {
-    text-align: center; }
-  .post-buttons a {
-    display: inline-block;
-    margin-bottom: 10px; }
-  .image-link {
-    height: 200px;
-    background-position: center; }
-  .image-link:hover {
-    background-position: center; }
-  .image-link h3 {
-    font-size: 20px; } }
-
-/*Small*/
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden; }
-  div.main-content-container {
-    padding-bottom: 0; }
-  /*clear floats*/
-  header nav ul, section.main, aside, footer p, footer nav {
-    float: none; }
-  /*turn inline to block elements*/
-  header nav a, header nav ul, section.main, aside, footer p {
-    display: block; }
-  /*hide certain elements*/
-  .post-info a.profile-pic-link, .post-info a.user-name, .sidebar-text, .brand-title, .post-buttons a span {
-    display: none; }
-  .container {
-    width: 460px; }
-  header {
-    height: 220px; }
-  header nav {
-    width: 400px;
-    margin: 0 auto;
-    text-align: center; }
-  header nav ul {
-    margin-bottom: 20px; }
-  header nav a {
-    margin-bottom: 10px; }
-  .caption {
-    margin-top: 0px; }
-  .caption h1 {
-    font-size: 44px;
-    line-height: 20px; }
-  .footer-wrapper {
-    padding: 30px;
-    padding-left: 20px;
-    padding-right: 20px; }
-  section.main, aside {
-    width: 100%; }
-  .sidebar-wrapper, .posts-wrapper {
-    padding: 40px; }
-  .sidebar-wrapper {
-    padding-top: 0; }
-  .sidebar-ad-wrapper {
-    width: 100%;
-    height: 240px;
-    background-size: cover; }
-  .sidebar-ad-wrapper:hover {
-    background-size: cover; }
-  .sidebar-text p {
-    font-size: 14px; }
-  .posts-wrapper h2 {
-    font-size: 64px; }
-  .post-buttons a {
-    display: inline; }
-  .popular-posts h2 {
-    font-size: 36px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  .image-link {
-    height: 240px;
-    background-position: center;
-    width: 100%;
-    margin-bottom: 20px; }
-  .image-link li {
-    float: none; }
-  .popular-posts-wrapper > a {
-    display: block; }
-  .popular-posts-wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: white;
-    overflow: auto; }
-  .image-link:hover {
-    background-position: center; }
-  .image-link h3 {
-    font-size: 30px;
-    padding-right: 80px; }
-  footer, footer nav {
-    text-align: center; }
-  footer nav {
-    padding: 0; }
-  footer nav ul {
-    padding-left: 0px; }
-  div.footer-wrapper p {
-    margin-bottom: 40px; }
-  .post-buttons {
-    display: inline; }
-  blockquote {
-    margin-right: 0; }
-  .visible-s {
-    display: block; }
-  .hidden-s {
-    display: none; }
-  .logo-wrapper {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block; }
-  footer {
-    height: auto; }
-  .footer-link-four {
-    display: none; } }
-
-@media screen and (max-width: 320px) {
-  .container {
-    width: 300px; }
-  header {
-    height: 180px; }
-  header nav {
-    width: 280px;
-    padding-top: 16px; }
-  header nav ul {
-    margin-bottom: 10px; }
-  h5 {
-    font-size: 14px; }
-  .caption h1 {
-    font-size: 28px;
-    line-height: 6px; }
-  .caption p {
-    font-size: 12px;
-    font-weight: bold; }
-  .posts-wrapper h2 {
-    font-size: 44px; }
-  .popular-posts h2 {
-    font-size: 24px; }
-  .image-link h3 {
-    font-size: 20px;
-    padding-right: 60px; }
-  blockquote {
-    font-size: 16px; }
-  .post-content p {
-    font-size: 12px; }
-  .sidebar-ad a {
-    font-size: 12px; }
-  .sidebar-wrapper, .posts-wrapper, .popular-posts-wrapper {
-    padding: 20px; }
-  .posts-wrapper {
-    padding-top: 40px; }
-  .image-link {
-    height: 240px; } }
-
 /***** Body, Main Container *****/
 body {
   margin: 0;
@@ -295,50 +71,6 @@ aside {
   width: 35%; }
 
 /***** End Main Content Container Stuffs *****/
-/***** HEADER *****/
-header {
-  height: 523px;
-  text-align: center;
-  background: linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6)), url('../images/rocks.jpeg');
-  background-size: cover;
-  vertical-align: middle; }
-  header nav {
-    margin: 0 auto;
-    vertical-align: middle;
-    width: 1004px;
-    text-align: left;
-    padding: 20px; }
-    header nav p {
-      display: inline; }
-    header nav a {
-      display: inline;
-      color: black; }
-      header nav a:hover {
-        color: white; }
-    header nav ul {
-      float: right;
-      margin: 0;
-      padding: 0; }
-      header nav ul li {
-        display: inline-block;
-        list-style-type: none;
-        margin-right: 10px; }
-
-.caption {
-  margin-top: 136px;
-  margin-left: 128px;
-  margin-right: 128px;
-  height: 120px; }
-  .caption h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 90px;
-    color: white;
-    line-height: 50px; }
-  .caption p {
-    color: black;
-    font-size: 14px; }
-
-/***** END HEADER *****/
 /***** POST AREA *****/
 .posts-wrapper {
   padding-top: 60px;
@@ -513,7 +245,7 @@ section.popular-posts {
   background-position: center; }
   .ravelle:hover {
     background: none;
-    background-image: url('images/ravelle.jpg');
+    background-image: url('../images/ravelle.jpg');
     background-size: cover;
     background-position: center; }
 
@@ -539,6 +271,50 @@ section.popular-posts {
   transition: color .5s ease-in-out; }
 
 /***** END Most Popular Posts Section *****/
+/***** HEADER *****/
+header {
+  height: 523px;
+  text-align: center;
+  background: linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6)), url('../images/rocks.jpeg');
+  background-size: cover;
+  vertical-align: middle; }
+  header nav {
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 1004px;
+    text-align: left;
+    padding: 20px; }
+    header nav p {
+      display: inline; }
+    header nav a {
+      display: inline;
+      color: black; }
+      header nav a:hover {
+        color: white; }
+    header nav ul {
+      float: right;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 10px; }
+
+.caption {
+  margin-top: 136px;
+  margin-left: 128px;
+  margin-right: 128px;
+  height: 120px; }
+  .caption h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90px;
+    color: white;
+    line-height: 50px; }
+  .caption p {
+    color: black;
+    font-size: 14px; }
+
+/***** END HEADER *****/
 /***** FOOTER *****/
 .footer-wrapper {
   padding-top: 44px;

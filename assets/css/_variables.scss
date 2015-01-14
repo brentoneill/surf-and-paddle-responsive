@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Oswald', sans-serif;
+
+$white: #FFFFFF;
+$light-blue: #106db3;
+$dark-blue: #083452;
+$light-grey: #a3b3bf;
+$dark-grey: #5e686f;
+$gradient : linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6));
+
+$blue-tint:rgba(70, 130, 180, 0.6);
+
+$header-image:url('../images/rocks.jpeg');
+
+$post-img1 : url('../images/honnold.jpg');
+$post-img2 : url('../images/rope.jpg');
+$post-img3 : url('../images/ravelle.jpg');
+$post-img4 : url('../images/beeners.jpg');
+
+@mixin gradient-bg($rgba1, $rgba2, $image) {
+  background: linear-gradient($rgba1, $rgba2), $image;
+}
+@mixin clear-bg($img) {
+  background:none;
+  background-image:$img;
+}

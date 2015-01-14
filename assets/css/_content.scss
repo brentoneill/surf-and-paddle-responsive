@@ -1,0 +1,298 @@
+/***** Main Content Container Stuffs *****/
+.container {
+  width:1300px;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:40px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 12px 0px rgba(50, 50, 50, 0.5);
+}
+
+.main-content-container {
+  display:block;
+  padding-bottom:40px;
+  overflow:auto;
+  background-color:white;
+}
+
+section.main, aside {
+  float:left;
+  display:block;
+}
+
+section.main {
+  background-color:white;
+  width:65%;
+}
+
+aside {
+  background-color:white;
+  width:35%;
+}
+/***** End Main Content Container Stuffs *****/
+
+
+
+
+/***** POST AREA *****/
+.posts-wrapper {
+  padding-top:60px;
+  padding-bottom:60px;
+  padding-left:120px;
+  padding-right:60px;
+}
+
+.profile-pic {
+  border-radius:100%;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+
+.post-info {
+  color:$light-grey;
+  font-size:13px;
+  vertical-align:top;
+  margin-top:10px;
+
+  p{
+    margin:0;
+    margin-left:10px;
+    display:inline;
+  }
+  .user-name a {
+    color:$light-blue;
+  }
+  a{
+    vertical-align:top;
+    color:$light-grey;
+    text-decoration:underline;
+    &:hover {
+      color:$light-blue;
+    }
+  }
+}
+
+article.posts-wrapper > p {
+  margin-top:30px;
+}
+
+.post-content {
+  a{
+    color:$light-blue;
+    text-decoration:underline;
+    &:hover {
+      color:$dark-blue;
+    }
+    &:visited {
+      color:$light-grey;
+    }
+  }
+}
+
+.post-buttons {
+  margin-top:60px;
+  a {
+    margin-right:10px;
+    color:white;
+    font-size:13px;
+    &:hover {
+      opacity:.7;
+    }
+  }
+  span {
+    padding:10px;
+    background-color:$light-grey;
+  }
+  .fa {
+    background-color:$dark-grey;
+    padding:6px;
+    margin-bottom:4px;
+    vertical-align:middle;
+  }
+  .fa-share-square {
+    background-color:$dark-blue;
+  }
+  .share span {
+    background-color:$light-blue;
+  }
+}
+
+a.user-name {
+  text-decoration:none;
+  color:$light-blue;
+  margin-left:4px;
+  margin-right:6px;
+  vertical-align:top;
+}
+/***** END POST AREA *****/
+
+
+
+
+/***** SIDEBAR *****/
+.sidebar-wrapper {
+  padding-right:120px;
+  padding-top:60px;
+  padding-left:20px;
+
+  section {
+    margin-bottom:40px;
+  }
+}
+
+.profile-pic-link:hover {
+  opacity:.8;
+}
+
+.user-info {
+  text-align:center;
+  margin-top:40px;
+
+  ul {
+    margin:0;
+    padding:0;
+
+    li {
+      display:inline;
+      list-style-type:none;;
+      font-size:13px;
+      color:$light-grey;
+
+      a {
+        color:$light-grey;
+        &:hover {
+          color:$light-blue;
+        }
+      }
+    }
+  }
+}
+
+.user-name {
+  margin-top:12px;
+  margin-bottom:6px;
+  text-transform:uppercase;
+  color:$light-blue;
+}
+
+.sidebar-ad-wrapper {
+  background: $gradient, url('../images/sharma-climber.jpg');
+  height:315px;
+  width:315px;
+  &:hover {
+    background: url('../images/sharma-climber.jpg');
+  }
+}
+
+.sidebar-ad {
+  p{
+    text-align:right;
+    margin:0;
+  }
+  a {
+    color:$light-grey;
+    font-size:16px;
+    text-decoration:underline;
+    &:hover {
+      color:$light-blue;
+    }
+  }
+}
+.sidebar-text {
+  p {
+    color:$light-grey;
+  }
+  h4{
+    color:$light-blue;
+  }
+}
+/***** END SIDEBAR *****/
+
+
+
+/***** Most Popular Posts Section *****/
+section.popular-posts {
+  background-color:#FFFFFF;
+  text-align:center;
+  border-top:thin solid $light-grey;
+  display:block;
+}
+
+.popular-posts h2 {
+  margin:0px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.popular-posts-wrapper {
+  position:relative;
+}
+
+.popular-posts-wrapper > a {
+  display:inline;
+}
+
+.image-link {
+  height:325px;
+  width:25%;
+  color:$dark-blue;
+  float:left;
+  display:inline;
+  position:relative;
+}
+
+.honnold {
+  @include gradient-bg($blue-tint,$blue-tint,$post-img1);
+  &:hover {
+    @include clear-bg($post-img1);
+  }
+}
+
+.rope {
+  @include gradient-bg($blue-tint,$blue-tint,$post-img2);
+  background-size:cover;
+  background-position:center;
+  &:hover {
+    @include clear-bg($post-img2);
+    background-size:cover;
+    background-position:center;
+  }
+}
+
+.ravelle {
+  @include gradient-bg($blue-tint,$blue-tint,$post-img3);
+  background-size:cover;
+  background-position:center;
+  &:hover {
+    @include clear-bg($post-img3);
+    background-size:cover;
+    background-position:center;
+  }
+}
+
+.beeners {
+  @include gradient-bg($blue-tint,$blue-tint,$post-img4);
+  &:hover {
+    @include clear-bg($post-img4);
+  }
+}
+
+.image-link:hover > h3 {
+  color:$white;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.8);
+}
+
+.image-link a {
+  color:$dark-blue;
+
+}
+.image-link h3 {
+  position:absolute;
+  text-align:left;
+  font-size:30px;
+  bottom:20px;
+  left:20px;
+  transition:color .5s ease-in-out;
+}
+/***** END Most Popular Posts Section *****/
