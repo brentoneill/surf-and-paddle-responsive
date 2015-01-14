@@ -6,12 +6,18 @@ header,
   -webkit-animation-property: width;
   -webkit-animation-property: height;
   -webkit-transition-duration: .7s;
+  animation-property: width;
+  animation-property: height;
+  transition-duration: .7s;
 }
 
 .caption h1,
-.posts-wrapper h2 {
+.posts-wrapper h2,
+.popular-posts h2 {
   -webkit-animation-property: font-size;
   -webkit-transition-duration: .5s;
+  animation-property: font-size;
+  transition-duration: .5s;
 }
 /*End Animated Media Queries*/
 

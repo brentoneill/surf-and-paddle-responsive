@@ -1,0 +1,468 @@
+/***** Google Font imports *****/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@import 'responsive';
+
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Oswald', sans-serif;
+
+$white: #FFFFFF;
+$light-blue: #106db3;
+$dark-blue: #083452;
+$light-grey: #a3b3bf;
+$dark-grey: #5e686f;
+$gradient : linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6));
+
+/***** Body, Main Container *****/
+body {
+  margin:0;
+  padding:0;
+  background-color:$light-grey;
+  font-family: $body-font;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-transform:uppercase;
+  font-family: $header-font;
+  margin:0;
+}
+h2 {
+  font-size:60px;
+  color:$dark-blue;
+}
+
+h4 {
+  font-size:24px;
+}
+h5 {
+  font-size:18px;
+}
+a {
+  text-decoration:none;
+  -webkit-transition:color .7s ease-in-out;
+  transition:color .7s ease-in-out;
+}
+p {
+  color:black;
+  line-height:1.8em;
+}
+blockquote {
+  color:$light-blue;
+  font-size:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  border-left:medium solid $light-grey;
+  margin-left:0px;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+/***** Main Content Container Stuffs *****/
+.container {
+  width:1300px;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:40px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 12px 0px rgba(50, 50, 50, 0.5);
+}
+
+.main-content-container {
+  display:block;
+  padding-bottom:40px;
+  overflow:auto;
+  background-color:white;
+}
+
+section.main, aside {
+  float:left;
+  display:block;
+}
+
+section.main {
+  background-color:white;
+  width:65%;
+}
+
+aside {
+  background-color:white;
+  width:35%;
+}
+/***** End Main Content Container Stuffs *****/
+
+
+/***** HEADER *****/
+header {
+  height:523px;
+  text-align:center;
+  background: linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6)),
+  url('images/rocks.jpeg');
+  background-size:cover;
+  vertical-align:middle;
+
+  nav {
+    margin:0 auto;
+    vertical-align:middle;
+    width:1004px;
+    text-align:left;
+    padding:20px;
+    p {
+      display:inline;
+    }
+    a {
+      display:inline;
+      color:black;
+      &:hover {
+        color:white;
+      }
+    }
+    ul {
+      float:right;
+      margin:0;
+      padding:0;
+      li {
+        display:inline-block;
+        list-style-type:none;
+        margin-right:10px;
+      }
+    }
+  }
+}
+
+.caption {
+  margin-top:136px;
+  margin-left:128px;
+  margin-right:128px;
+  height:120px;
+
+  h1 {
+    font-family:$body-font;
+    font-size:90px;
+    color:white;
+    line-height:50px;
+  }
+  p {
+    color:black;
+    font-size:14px;
+  }
+}
+/***** END HEADER *****/
+
+
+
+
+/***** POST AREA *****/
+.posts-wrapper {
+  padding-top:60px;
+  padding-bottom:60px;
+  padding-left:120px;
+  padding-right:60px;
+}
+
+.profile-pic {
+  border-radius:100%;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+
+.post-info {
+  color:$light-grey;
+  font-size:13px;
+  vertical-align:top;
+  margin-top:10px;
+
+  p{
+    margin:0;
+    margin-left:10px;
+    display:inline;
+  }
+  .user-name a {
+    color:$light-blue;
+  }
+  a{
+    vertical-align:top;
+    color:$light-grey;
+    text-decoration:underline;
+    &:hover {
+      color:$light-blue;
+    }
+  }
+}
+
+article.posts-wrapper > p {
+  margin-top:30px;
+}
+
+.post-content {
+  a{
+    color:$light-blue;
+    text-decoration:underline;
+    &:hover {
+      color:$dark-blue;
+    }
+    &:visited {
+      color:$light-grey;
+    }
+  }
+}
+
+.post-buttons {
+  margin-top:60px;
+  a {
+    margin-right:10px;
+    color:white;
+    font-size:13px;
+    &:hover {
+      opacity:.7;
+    }
+  }
+  span {
+    padding:10px;
+    background-color:$light-grey;
+  }
+  .fa {
+    background-color:$dark-grey;
+    padding:6px;
+    margin-bottom:4px;
+    vertical-align:middle;
+  }
+  .fa-share-square {
+    background-color:$dark-blue;
+  }
+  .share span {
+    background-color:$light-blue;
+  }
+}
+
+a.user-name {
+  text-decoration:none;
+  color:$light-blue;
+  margin-left:4px;
+  margin-right:6px;
+  vertical-align:top;
+}
+/***** END POST AREA *****/
+
+
+
+
+/***** SIDEBAR *****/
+.sidebar-wrapper {
+  padding-right:120px;
+  padding-top:60px;
+  padding-left:20px;
+
+  section {
+    margin-bottom:40px;
+  }
+}
+
+.profile-pic-link:hover {
+  opacity:.8;
+}
+
+.user-info {
+  text-align:center;
+  margin-top:40px;
+
+  ul {
+    margin:0;
+    padding:0;
+
+    li {
+      display:inline;
+      list-style-type:none;;
+      font-size:13px;
+      color:$light-grey;
+
+      a {
+        color:$light-grey;
+        &:hover {
+          color:$light-blue;
+        }
+      }
+    }
+  }
+}
+
+.user-name {
+  margin-top:12px;
+  margin-bottom:6px;
+  text-transform:uppercase;
+  color:$light-blue;
+}
+
+.sidebar-ad-wrapper {
+  background: $gradient, url('images/sharma-climber.jpg');
+  height:315px;
+  width:315px;
+  &:hover {
+    background: url('images/sharma-climber.jpg');
+  }
+}
+
+.sidebar-ad {
+  p{
+    text-align:right;
+    margin:0;
+  }
+  a {
+    color:$light-grey;
+    font-size:16px;
+    text-decoration:underline;
+    &:hover {
+      color:$light-blue;
+    }
+  }
+}
+.sidebar-text {
+  p {
+    color:$light-grey;
+  }
+  h4{
+    color:$light-blue;
+  }
+}
+/***** END SIDEBAR *****/
+
+
+
+/***** Most Popular Posts Section *****/
+section.popular-posts {
+  background-color:#FFFFFF;
+  text-align:center;
+  border-top:thin solid $light-grey;
+  display:block;
+}
+
+.popular-posts h2 {
+  margin:0px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.popular-posts-wrapper {
+  position:relative;
+}
+
+.popular-posts-wrapper > a {
+  display:inline;
+}
+
+.image-link {
+  height:325px;
+  width:25%;
+  color:$dark-blue;
+  float:left;
+  display:inline;
+  position:relative;
+}
+
+.honnold {
+  background: $gradient, url('images/honnold.jpg');
+  &:hover {
+    background:none;
+    background-image:url('images/honnold.jpg');
+  }
+}
+
+.rope {
+  background: $gradient, url('images/rope.jpg');
+  background-size:cover;
+  background-position:center;
+  &:hover {
+    background:none;
+    background-image:url('images/rope.jpg');
+    background-size:cover;
+    background-position:center;
+  }
+}
+
+.ravelle {
+  background:$gradient, url('images/ravelle.jpg');
+  background-size:cover;
+  background-position:center;
+  &:hover {
+    background:none;
+    background-image:url('images/ravelle.jpg');
+    background-size:cover;
+    background-position:center;
+  }
+}
+
+.beeners {
+  background: linear-gradient(rgba(70, 130, 180, 0.6), rgba(70, 130, 180, 0.6)),
+  url('images/beeners.jpg');
+  &:hover {
+    background:none;
+    background-image:url('images/beeners.jpg');
+  }
+}
+
+.image-link:hover > h3 {
+  color:$white;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.8);
+}
+
+.image-link a {
+  color:$dark-blue;
+
+}
+.image-link h3 {
+  position:absolute;
+  text-align:left;
+  font-size:30px;
+  bottom:20px;
+  left:20px;
+  transition:color .5s ease-in-out;
+}
+/***** END Most Popular Posts Section *****/
+
+
+
+/***** FOOTER *****/
+.footer-wrapper {
+  padding-top:44px;
+  padding-right:155px;
+  padding-left:155px;
+}
+
+.logo-wrapper {
+  display:inline;
+}
+
+footer {
+  width:100%;
+  background-color:$dark-blue;
+  height:96px;
+  color:$light-grey;
+  display:inline-block;
+  font-size:13px;
+
+  p {
+    margin:0px;
+    display:inline;
+    color:$light-grey;
+  }
+
+  nav {
+    float:right;
+    display:inline;
+    ul {
+      margin:0px;
+      li {
+        display:inline;
+        a {
+          color:$light-grey;
+          margin-right:6px;
+          &:hover {
+            color:$white;
+          }
+        }
+      }
+    }
+  }
+}
+@import 'responsive';
